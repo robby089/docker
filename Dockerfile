@@ -1,4 +1,4 @@
 FROM tomcat:8
-ADD https://jar-war-files.s3.amazonaws.com/gameoflife.war /usr/local/tomcat/webapps
+ADD http://18.222.110.2:8082/artifactory/gol/gameoflife.war /usr/local/tomcat/webapps
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
